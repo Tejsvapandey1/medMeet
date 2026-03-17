@@ -34,7 +34,7 @@ services:
       - .env.docker
     environment:
       NODE_ENV: production
-      DATABASE_URL: postgresql://medmeet:medmeet@db:5432/medmeet?schema=public
+      DATABASE_URL: DATABASE_URL=${{Postgres.DATABASE_URL}}
     ports:
       - "3000:3000"
 
