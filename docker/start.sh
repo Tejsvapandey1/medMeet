@@ -8,4 +8,4 @@ echo "Syncing database schema..."
 npx prisma db push --accept-data-loss
 
 echo "Starting Next.js..."
-exec npm run start
+exec npx next start -p ${PORT:-3000}

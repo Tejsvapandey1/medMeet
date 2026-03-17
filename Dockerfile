@@ -38,4 +38,4 @@ COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/docker ./docker
 RUN chmod +x /app/docker/start.sh
 EXPOSE 3000
-CMD ["./docker/start.sh"]
+CMD ["sh", "./docker/start.sh"]
