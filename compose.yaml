@@ -30,10 +30,11 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    
+    env_file:
+      - .env.docker
     environment:
       NODE_ENV: production
-      
+      DATABASE_URL: postgresql://medmeet:medmeet@db:5432/medmeet?schema=public
     ports:
       - "3000:3000"
 
