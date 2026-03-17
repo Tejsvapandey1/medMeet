@@ -30,11 +30,10 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    env_file:
-      - .env.docker
+    
     environment:
       NODE_ENV: production
-      DATABASE_URL: DATABASE_URL=${{Postgres.DATABASE_URL}}
+      
     ports:
       - "3000:3000"
 
