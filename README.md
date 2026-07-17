@@ -51,3 +51,5 @@ VONAGE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----"
 - Make sure `DATABASE_URL` points to your Railway Postgres instance.
 - If you want sample seed data during deploy, add `SEED_DATABASE=true` in Railway variables.
 - You can also run the seed manually in Railway with `npx prisma db seed`.
+
+Helped By Akshansh Anant.
